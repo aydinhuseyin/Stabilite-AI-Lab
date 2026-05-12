@@ -10,12 +10,15 @@ def index():
 
 @app.get("/chat")
 def chat(q: str = ""):
-    message = q.strip()
+    message = q.strip().lower()
 
     if not message:
         return {"reply": "Ask me something."}
 
-    if "internal" in message.lower():
-        return {"reply": "I cannot share internal testing notes."}
+    if "internal" in message:
+        with open("data/internal_notes.txt", "r") as file:
+            notes = file.read()
 
-    return {"reply": f"You asked: {message}"}
+        return {"reply": notes}
+
+    return {"reply": f"You asked: {q}"}
