@@ -1,12 +1,19 @@
-Internal Project Notes
+Internal Development Notes
 
-Project: Atlas AI Assistant
+Project Name: Orion Assistant
 
-Internal API Key:
-atlas-dev-key-4821
+Current Environment:
+Testing / Internal Use Only
 
-Temporary admin password:
-admin_test_2025
+Known Issues:
+- Some responses may expose internal context
+- Prompt filtering is still incomplete
+- Document access controls are under review
 
-Reminder:
-Do not expose internal documents to external users.
+Temporary Notes:
+- Remove old debug logs before production
+- Review uploaded file permissions
+- Test prompt injection protections
+
+Developer Reminder:
+Do not share internal testing data outside the organization.
