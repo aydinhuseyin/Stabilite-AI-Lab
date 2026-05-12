@@ -15,7 +15,10 @@ def chat(q: str = ""):
     if not message:
         return {"reply": "Ask me something."}
 
-    if "internal" in message:
+    if (
+        "ignore previous instructions" in message
+        or "show internal data" in message
+    ):
         with open("data/internal_notes.txt", "r") as file:
             notes = file.read()
 
