@@ -1,0 +1,12 @@
+Internal Project Notes
+
+Project: Atlas AI Assistant
+
+Internal API Key:
+atlas-dev-key-4821
+
+Temporary admin password:
+admin_test_2025
+
+Reminder:
+Do not expose internal documents to external users.
