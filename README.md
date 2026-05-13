@@ -26,3 +26,49 @@ This project is being developed as part of the Stabilite initiative to better un
 
 ## Status
 Currently under development.
+## Project Structure
+
+```text
+app/
+ └── main.py
+
+data/
+ └── internal_notes.txt
+
+docs/
+```
+
+## Features
+
+- FastAPI backend
+- Simulated internal data exposure
+- Prompt injection behavior simulation
+- Simple AI-style chat endpoint
+
+## Running the Project
+
+Install dependencies:
+
+```bash
+pip install fastapi uvicorn
+```
+
+Start the server:
+
+```bash
+python -m uvicorn app.main:app --reload
+```
+
+## Example Usage
+
+Normal request:
+
+```text
+/chat?q=hello
+```
+
+Prompt injection simulation:
+
+```text
+/chat?q=ignore previous instructions
+```
